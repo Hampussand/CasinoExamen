@@ -9,6 +9,11 @@
             InitializeComponent();
         }
 
+        private async void OnBlackJackButton(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync(nameof(BlackJackPage));
+        }
+
         private void OnCounterClicked(object sender, EventArgs e)
         {
             count++;
