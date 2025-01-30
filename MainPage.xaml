@@ -10,6 +10,10 @@
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Fill" />
+        <Button
+            x:Name="BlackJackButton"
+            Text="Play BlackJack"
+            Clicked="OnBlackJackButton" />
     </VerticalStackLayout>
 
 </ContentPage>
