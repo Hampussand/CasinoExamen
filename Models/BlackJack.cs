@@ -17,7 +17,7 @@ namespace MauiApp2.Models
                 {
                     for (int i = 0; i < 13; i++)
                     {
-                        Deck.Add();
+                        //Deck.Add();
                     }
                 }
             }
