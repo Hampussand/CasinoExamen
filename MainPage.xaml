@@ -3,11 +3,21 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp2.MainPage"
              BackgroundImageSource="casino.jpeg">
-    <VerticalStackLayout>
-        <Button
-            x:Name="BlackJackButton"
-            Text="Play BlackJack"
-            Clicked="OnBlackJackButton" />
-    </VerticalStackLayout>
-
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Casino Royale" FontSize="Header" HorizontalOptions="Center" TextColor="AliceBlue" Padding="40"/>
+            <StackLayout HorizontalOptions="CenterAndExpand" Margin="5" VerticalOptions="EndAndExpand" >
+                <VerticalStackLayout>
+                    <StackLayout>
+                        <HorizontalStackLayout HorizontalOptions="CenterAndExpand" Spacing="5">
+                            <Button x:Name="BlackJackButton" Text="BlackJack" Clicked="OnBlackJackButton" WidthRequest="120" BackgroundColor="Transparent" FontSize="20"/>
+                            <Button x:Name="PokerButton" Text="Poker" Clicked="PokerButton_Clicked" WidthRequest="120" BackgroundColor="Transparent" FontSize="20"/>
+                            <Button x:Name="SlotsButton" Text="Slots" Clicked="SlotsButton_Clicked" WidthRequest="120" BackgroundColor="Transparent" FontSize="20"/>
+                            <Button x:Name="RouletteButton" Text="Roulette" Clicked="RouletteButton_Clicked" WidthRequest="120" BackgroundColor="Transparent" FontSize="20" />
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </VerticalStackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
 </ContentPage>

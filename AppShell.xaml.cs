@@ -6,6 +6,7 @@
         {
             InitializeComponent();
             Routing.RegisterRoute(nameof(BlackJackPage), typeof(BlackJackPage));
+            Routing.RegisterRoute(nameof(PokerPage), typeof(PokerPage));
         }
     }
 }
